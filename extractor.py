@@ -25,6 +25,8 @@ def extract_values(data):
         if isinstance(key, str) and key in TARGET_KEYS:
             name = TARGET_KEYS[key]
             value = _get_value(record, "Voltage(V)")
+
+
             if isinstance(value, str):
                 try:
                     value = float(value)
