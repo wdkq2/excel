@@ -1,0 +1,863 @@
+[
+  {
+    "NO": 1,
+    "Voltage(V)": 1.188,
+    "Current(mA)": 4.648,
+    "CurrentDensity(mA/cm^2)": 48.52,
+    "Power(mW)": 5.52
+  },
+  {
+    "NO": 2,
+    "Voltage(V)": 1.175,
+    "Current(mA)": 3.772,
+    "CurrentDensity(mA/cm^2)": 39.377,
+    "Power(mW)": 4.432
+  },
+  {
+    "NO": 3,
+    "Voltage(V)": 1.163,
+    "Current(mA)": 2.948,
+    "CurrentDensity(mA/cm^2)": 30.777,
+    "Power(mW)": 3.428
+  },
+  {
+    "NO": 4,
+    "Voltage(V)": 1.15,
+    "Current(mA)": 2.186,
+    "CurrentDensity(mA/cm^2)": 22.817,
+    "Power(mW)": 2.514
+  },
+  {
+    "NO": 5,
+    "Voltage(V)": 1.138,
+    "Current(mA)": 1.489,
+    "CurrentDensity(mA/cm^2)": 15.538,
+    "Power(mW)": 1.693
+  },
+  {
+    "NO": 6,
+    "Voltage(V)": 1.125,
+    "Current(mA)": 0.88,
+    "CurrentDensity(mA/cm^2)": 9.19,
+    "Power(mW)": 0.99
+  },
+  {
+    "NO": 7,
+    "Voltage(V)": 1.113,
+    "Current(mA)": 0.306,
+    "CurrentDensity(mA/cm^2)": 3.19,
+    "Power(mW)": 0.34
+  },
+  {
+    "NO": 8,
+    "Voltage(V)": 1.1,
+    "Current(mA)": -0.183,
+    "CurrentDensity(mA/cm^2)": -1.91,
+    "Power(mW)": -0.201
+  },
+  {
+    "NO": 9,
+    "Voltage(V)": 1.088,
+    "Current(mA)": -0.602,
+    "CurrentDensity(mA/cm^2)": -6.282,
+    "Power(mW)": -0.654
+  },
+  {
+    "NO": 10,
+    "Voltage(V)": 1.075,
+    "Current(mA)": -0.951,
+    "CurrentDensity(mA/cm^2)": -9.925,
+    "Power(mW)": -1.022
+  },
+  {
+    "NO": 11,
+    "Voltage(V)": 1.063,
+    "Current(mA)": -1.221,
+    "CurrentDensity(mA/cm^2)": -12.748,
+    "Power(mW)": -1.298
+  },
+  {
+    "NO": 12,
+    "Voltage(V)": 1.05,
+    "Current(mA)": -1.458,
+    "CurrentDensity(mA/cm^2)": -15.224,
+    "Power(mW)": -1.531
+  },
+  {
+    "NO": 13,
+    "Voltage(V)": 1.038,
+    "Current(mA)": -1.639,
+    "CurrentDensity(mA/cm^2)": -17.11,
+    "Power(mW)": -1.701
+  },
+  {
+    "NO": 14,
+    "Voltage(V)": 1.025,
+    "Current(mA)": -1.778,
+    "CurrentDensity(mA/cm^2)": -18.558,
+    "Power(mW)": -1.822
+  },
+  {
+    "NO": 15,
+    "Voltage(V)": 1.013,
+    "Current(mA)": -1.883,
+    "CurrentDensity(mA/cm^2)": -19.659,
+    "Power(mW)": -1.907
+  },
+  {
+    "NO": 16,
+    "Voltage(V)": 1,
+    "Current(mA)": -1.963,
+    "CurrentDensity(mA/cm^2)": -20.491,
+    "Power(mW)": -1.963
+  },
+  {
+    "NO": 17,
+    "Voltage(V)": 0.988,
+    "Current(mA)": -2.023,
+    "CurrentDensity(mA/cm^2)": -21.118,
+    "Power(mW)": -1.998
+  },
+  {
+    "NO": 18,
+    "Voltage(V)": 0.975,
+    "Current(mA)": -2.068,
+    "CurrentDensity(mA/cm^2)": -21.59,
+    "Power(mW)": -2.017
+  },
+  {
+    "NO": 19,
+    "Voltage(V)": 0.963,
+    "Current(mA)": -2.103,
+    "CurrentDensity(mA/cm^2)": -21.952,
+    "Power(mW)": -2.024
+  },
+  {
+    "NO": 20,
+    "Voltage(V)": 0.95,
+    "Current(mA)": -2.13,
+    "CurrentDensity(mA/cm^2)": -22.23,
+    "Power(mW)": -2.023
+  },
+  {
+    "NO": 21,
+    "Voltage(V)": 0.938,
+    "Current(mA)": -2.15,
+    "CurrentDensity(mA/cm^2)": -22.447,
+    "Power(mW)": -2.016
+  },
+  {
+    "NO": 22,
+    "Voltage(V)": 0.925,
+    "Current(mA)": -2.167,
+    "CurrentDensity(mA/cm^2)": -22.616,
+    "Power(mW)": -2.004
+  },
+  {
+    "NO": 23,
+    "Voltage(V)": 0.913,
+    "Current(mA)": -2.18,
+    "CurrentDensity(mA/cm^2)": -22.753,
+    "Power(mW)": -1.989
+  },
+  {
+    "NO": 24,
+    "Voltage(V)": 0.9,
+    "Current(mA)": -2.19,
+    "CurrentDensity(mA/cm^2)": -22.86,
+    "Power(mW)": -1.971
+  },
+  {
+    "NO": 25,
+    "Voltage(V)": 0.888,
+    "Current(mA)": -2.199,
+    "CurrentDensity(mA/cm^2)": -22.952,
+    "Power(mW)": -1.951
+  },
+  {
+    "NO": 26,
+    "Voltage(V)": 0.875,
+    "Current(mA)": -2.206,
+    "CurrentDensity(mA/cm^2)": -23.03,
+    "Power(mW)": -1.931
+  },
+  {
+    "NO": 27,
+    "Voltage(V)": 0.863,
+    "Current(mA)": -2.213,
+    "CurrentDensity(mA/cm^2)": -23.098,
+    "Power(mW)": -1.909
+  },
+  {
+    "NO": 28,
+    "Voltage(V)": 0.85,
+    "Current(mA)": -2.218,
+    "CurrentDensity(mA/cm^2)": -23.151,
+    "Power(mW)": -1.885
+  },
+  {
+    "NO": 29,
+    "Voltage(V)": 0.838,
+    "Current(mA)": -2.223,
+    "CurrentDensity(mA/cm^2)": -23.203,
+    "Power(mW)": -1.862
+  },
+  {
+    "NO": 30,
+    "Voltage(V)": 0.825,
+    "Current(mA)": -2.227,
+    "CurrentDensity(mA/cm^2)": -23.246,
+    "Power(mW)": -1.837
+  },
+  {
+    "NO": 31,
+    "Voltage(V)": 0.813,
+    "Current(mA)": -2.231,
+    "CurrentDensity(mA/cm^2)": -23.284,
+    "Power(mW)": -1.812
+  },
+  {
+    "NO": 32,
+    "Voltage(V)": 0.8,
+    "Current(mA)": -2.234,
+    "CurrentDensity(mA/cm^2)": -23.319,
+    "Power(mW)": -1.787
+  },
+  {
+    "NO": 33,
+    "Voltage(V)": 0.788,
+    "Current(mA)": -2.237,
+    "CurrentDensity(mA/cm^2)": -23.351,
+    "Power(mW)": -1.762
+  },
+  {
+    "NO": 34,
+    "Voltage(V)": 0.775,
+    "Current(mA)": -2.24,
+    "CurrentDensity(mA/cm^2)": -23.38,
+    "Power(mW)": -1.736
+  },
+  {
+    "NO": 35,
+    "Voltage(V)": 0.763,
+    "Current(mA)": -2.242,
+    "CurrentDensity(mA/cm^2)": -23.406,
+    "Power(mW)": -1.71
+  },
+  {
+    "NO": 36,
+    "Voltage(V)": 0.75,
+    "Current(mA)": -2.244,
+    "CurrentDensity(mA/cm^2)": -23.428,
+    "Power(mW)": -1.683
+  },
+  {
+    "NO": 37,
+    "Voltage(V)": 0.738,
+    "Current(mA)": -2.246,
+    "CurrentDensity(mA/cm^2)": -23.448,
+    "Power(mW)": -1.657
+  },
+  {
+    "NO": 38,
+    "Voltage(V)": 0.725,
+    "Current(mA)": -2.248,
+    "CurrentDensity(mA/cm^2)": -23.467,
+    "Power(mW)": -1.63
+  },
+  {
+    "NO": 39,
+    "Voltage(V)": 0.713,
+    "Current(mA)": -2.25,
+    "CurrentDensity(mA/cm^2)": -23.482,
+    "Power(mW)": -1.603
+  },
+  {
+    "NO": 40,
+    "Voltage(V)": 0.7,
+    "Current(mA)": -2.251,
+    "CurrentDensity(mA/cm^2)": -23.498,
+    "Power(mW)": -1.576
+  },
+  {
+    "NO": 41,
+    "Voltage(V)": 0.688,
+    "Current(mA)": -2.252,
+    "CurrentDensity(mA/cm^2)": -23.511,
+    "Power(mW)": -1.549
+  },
+  {
+    "NO": 42,
+    "Voltage(V)": 0.675,
+    "Current(mA)": -2.254,
+    "CurrentDensity(mA/cm^2)": -23.524,
+    "Power(mW)": -1.521
+  },
+  {
+    "NO": 43,
+    "Voltage(V)": 0.663,
+    "Current(mA)": -2.255,
+    "CurrentDensity(mA/cm^2)": -23.537,
+    "Power(mW)": -1.494
+  },
+  {
+    "NO": 44,
+    "Voltage(V)": 0.65,
+    "Current(mA)": -2.256,
+    "CurrentDensity(mA/cm^2)": -23.547,
+    "Power(mW)": -1.466
+  },
+  {
+    "NO": 45,
+    "Voltage(V)": 0.638,
+    "Current(mA)": -2.257,
+    "CurrentDensity(mA/cm^2)": -23.558,
+    "Power(mW)": -1.439
+  },
+  {
+    "NO": 46,
+    "Voltage(V)": 0.625,
+    "Current(mA)": -2.258,
+    "CurrentDensity(mA/cm^2)": -23.566,
+    "Power(mW)": -1.411
+  },
+  {
+    "NO": 47,
+    "Voltage(V)": 0.613,
+    "Current(mA)": -2.258,
+    "CurrentDensity(mA/cm^2)": -23.574,
+    "Power(mW)": -1.383
+  },
+  {
+    "NO": 48,
+    "Voltage(V)": 0.6,
+    "Current(mA)": -2.259,
+    "CurrentDensity(mA/cm^2)": -23.583,
+    "Power(mW)": -1.356
+  },
+  {
+    "NO": 49,
+    "Voltage(V)": 0.588,
+    "Current(mA)": -2.26,
+    "CurrentDensity(mA/cm^2)": -23.59,
+    "Power(mW)": -1.328
+  },
+  {
+    "NO": 50,
+    "Voltage(V)": 0.575,
+    "Current(mA)": -2.26,
+    "CurrentDensity(mA/cm^2)": -23.596,
+    "Power(mW)": -1.3
+  },
+  {
+    "NO": 51,
+    "Voltage(V)": 0.563,
+    "Current(mA)": -2.261,
+    "CurrentDensity(mA/cm^2)": -23.604,
+    "Power(mW)": -1.272
+  },
+  {
+    "NO": 52,
+    "Voltage(V)": 0.55,
+    "Current(mA)": -2.262,
+    "CurrentDensity(mA/cm^2)": -23.61,
+    "Power(mW)": -1.244
+  },
+  {
+    "NO": 53,
+    "Voltage(V)": 0.538,
+    "Current(mA)": -2.262,
+    "CurrentDensity(mA/cm^2)": -23.616,
+    "Power(mW)": -1.216
+  },
+  {
+    "NO": 54,
+    "Voltage(V)": 0.525,
+    "Current(mA)": -2.263,
+    "CurrentDensity(mA/cm^2)": -23.622,
+    "Power(mW)": -1.188
+  },
+  {
+    "NO": 55,
+    "Voltage(V)": 0.513,
+    "Current(mA)": -2.263,
+    "CurrentDensity(mA/cm^2)": -23.626,
+    "Power(mW)": -1.16
+  },
+  {
+    "NO": 56,
+    "Voltage(V)": 0.5,
+    "Current(mA)": -2.264,
+    "CurrentDensity(mA/cm^2)": -23.632,
+    "Power(mW)": -1.132
+  },
+  {
+    "NO": 57,
+    "Voltage(V)": 0.488,
+    "Current(mA)": -2.264,
+    "CurrentDensity(mA/cm^2)": -23.637,
+    "Power(mW)": -1.104
+  },
+  {
+    "NO": 58,
+    "Voltage(V)": 0.475,
+    "Current(mA)": -2.265,
+    "CurrentDensity(mA/cm^2)": -23.641,
+    "Power(mW)": -1.076
+  },
+  {
+    "NO": 59,
+    "Voltage(V)": 0.463,
+    "Current(mA)": -2.265,
+    "CurrentDensity(mA/cm^2)": -23.646,
+    "Power(mW)": -1.048
+  },
+  {
+    "NO": 60,
+    "Voltage(V)": 0.45,
+    "Current(mA)": -2.265,
+    "CurrentDensity(mA/cm^2)": -23.648,
+    "Power(mW)": -1.019
+  },
+  {
+    "NO": 61,
+    "Voltage(V)": 0.438,
+    "Current(mA)": -2.266,
+    "CurrentDensity(mA/cm^2)": -23.654,
+    "Power(mW)": -0.991
+  },
+  {
+    "NO": 62,
+    "Voltage(V)": 0.425,
+    "Current(mA)": -2.266,
+    "CurrentDensity(mA/cm^2)": -23.657,
+    "Power(mW)": -0.963
+  },
+  {
+    "NO": 63,
+    "Voltage(V)": 0.413,
+    "Current(mA)": -2.267,
+    "CurrentDensity(mA/cm^2)": -23.66,
+    "Power(mW)": -0.935
+  },
+  {
+    "NO": 64,
+    "Voltage(V)": 0.4,
+    "Current(mA)": -2.267,
+    "CurrentDensity(mA/cm^2)": -23.666,
+    "Power(mW)": -0.907
+  },
+  {
+    "NO": 65,
+    "Voltage(V)": 0.388,
+    "Current(mA)": -2.268,
+    "CurrentDensity(mA/cm^2)": -23.67,
+    "Power(mW)": -0.879
+  },
+  {
+    "NO": 66,
+    "Voltage(V)": 0.375,
+    "Current(mA)": -2.268,
+    "CurrentDensity(mA/cm^2)": -23.675,
+    "Power(mW)": -0.851
+  },
+  {
+    "NO": 67,
+    "Voltage(V)": 0.363,
+    "Current(mA)": -2.268,
+    "CurrentDensity(mA/cm^2)": -23.676,
+    "Power(mW)": -0.822
+  },
+  {
+    "NO": 68,
+    "Voltage(V)": 0.35,
+    "Current(mA)": -2.268,
+    "CurrentDensity(mA/cm^2)": -23.679,
+    "Power(mW)": -0.794
+  },
+  {
+    "NO": 69,
+    "Voltage(V)": 0.338,
+    "Current(mA)": -2.269,
+    "CurrentDensity(mA/cm^2)": -23.683,
+    "Power(mW)": -0.766
+  },
+  {
+    "NO": 70,
+    "Voltage(V)": 0.325,
+    "Current(mA)": -2.269,
+    "CurrentDensity(mA/cm^2)": -23.687,
+    "Power(mW)": -0.737
+  },
+  {
+    "NO": 71,
+    "Voltage(V)": 0.313,
+    "Current(mA)": -2.269,
+    "CurrentDensity(mA/cm^2)": -23.688,
+    "Power(mW)": -0.709
+  },
+  {
+    "NO": 72,
+    "Voltage(V)": 0.3,
+    "Current(mA)": -2.27,
+    "CurrentDensity(mA/cm^2)": -23.691,
+    "Power(mW)": -0.681
+  },
+  {
+    "NO": 73,
+    "Voltage(V)": 0.288,
+    "Current(mA)": -2.27,
+    "CurrentDensity(mA/cm^2)": -23.693,
+    "Power(mW)": -0.653
+  },
+  {
+    "NO": 74,
+    "Voltage(V)": 0.275,
+    "Current(mA)": -2.27,
+    "CurrentDensity(mA/cm^2)": -23.697,
+    "Power(mW)": -0.624
+  },
+  {
+    "NO": 75,
+    "Voltage(V)": 0.263,
+    "Current(mA)": -2.27,
+    "CurrentDensity(mA/cm^2)": -23.699,
+    "Power(mW)": -0.596
+  },
+  {
+    "NO": 76,
+    "Voltage(V)": 0.25,
+    "Current(mA)": -2.271,
+    "CurrentDensity(mA/cm^2)": -23.701,
+    "Power(mW)": -0.568
+  },
+  {
+    "NO": 77,
+    "Voltage(V)": 0.238,
+    "Current(mA)": -2.271,
+    "CurrentDensity(mA/cm^2)": -23.704,
+    "Power(mW)": -0.539
+  },
+  {
+    "NO": 78,
+    "Voltage(V)": 0.225,
+    "Current(mA)": -2.271,
+    "CurrentDensity(mA/cm^2)": -23.707,
+    "Power(mW)": -0.511
+  },
+  {
+    "NO": 79,
+    "Voltage(V)": 0.213,
+    "Current(mA)": -2.271,
+    "CurrentDensity(mA/cm^2)": -23.708,
+    "Power(mW)": -0.483
+  },
+  {
+    "NO": 80,
+    "Voltage(V)": 0.2,
+    "Current(mA)": -2.272,
+    "CurrentDensity(mA/cm^2)": -23.711,
+    "Power(mW)": -0.454
+  },
+  {
+    "NO": 81,
+    "Voltage(V)": 0.188,
+    "Current(mA)": -2.272,
+    "CurrentDensity(mA/cm^2)": -23.713,
+    "Power(mW)": -0.426
+  },
+  {
+    "NO": 82,
+    "Voltage(V)": 0.175,
+    "Current(mA)": -2.272,
+    "CurrentDensity(mA/cm^2)": -23.715,
+    "Power(mW)": -0.398
+  },
+  {
+    "NO": 83,
+    "Voltage(V)": 0.163,
+    "Current(mA)": -2.272,
+    "CurrentDensity(mA/cm^2)": -23.716,
+    "Power(mW)": -0.369
+  },
+  {
+    "NO": 84,
+    "Voltage(V)": 0.15,
+    "Current(mA)": -2.272,
+    "CurrentDensity(mA/cm^2)": -23.717,
+    "Power(mW)": -0.341
+  },
+  {
+    "NO": 85,
+    "Voltage(V)": 0.138,
+    "Current(mA)": -2.273,
+    "CurrentDensity(mA/cm^2)": -23.723,
+    "Power(mW)": -0.312
+  },
+  {
+    "NO": 86,
+    "Voltage(V)": 0.125,
+    "Current(mA)": -2.273,
+    "CurrentDensity(mA/cm^2)": -23.724,
+    "Power(mW)": -0.284
+  },
+  {
+    "NO": 87,
+    "Voltage(V)": 0.113,
+    "Current(mA)": -2.273,
+    "CurrentDensity(mA/cm^2)": -23.725,
+    "Power(mW)": -0.256
+  },
+  {
+    "NO": 88,
+    "Voltage(V)": 0.1,
+    "Current(mA)": -2.273,
+    "CurrentDensity(mA/cm^2)": -23.73,
+    "Power(mW)": -0.227
+  },
+  {
+    "NO": 89,
+    "Voltage(V)": 0.088,
+    "Current(mA)": -2.274,
+    "CurrentDensity(mA/cm^2)": -23.733,
+    "Power(mW)": -0.199
+  },
+  {
+    "NO": 90,
+    "Voltage(V)": 0.075,
+    "Current(mA)": -2.274,
+    "CurrentDensity(mA/cm^2)": -23.734,
+    "Power(mW)": -0.171
+  },
+  {
+    "NO": 91,
+    "Voltage(V)": 0.063,
+    "Current(mA)": -2.274,
+    "CurrentDensity(mA/cm^2)": -23.736,
+    "Power(mW)": -0.142
+  },
+  {
+    "NO": 92,
+    "Voltage(V)": 0.05,
+    "Current(mA)": -2.274,
+    "CurrentDensity(mA/cm^2)": -23.734,
+    "Power(mW)": -0.114
+  },
+  {
+    "NO": 93,
+    "Voltage(V)": 0.038,
+    "Current(mA)": -2.274,
+    "CurrentDensity(mA/cm^2)": -23.737,
+    "Power(mW)": -0.085
+  },
+  {
+    "NO": 94,
+    "Voltage(V)": 0.025,
+    "Current(mA)": -2.274,
+    "CurrentDensity(mA/cm^2)": -23.738,
+    "Power(mW)": -0.057
+  },
+  {
+    "NO": 95,
+    "Voltage(V)": 0.013,
+    "Current(mA)": -2.274,
+    "CurrentDensity(mA/cm^2)": -23.739,
+    "Power(mW)": -0.028
+  },
+  {
+    "NO": 96,
+    "Voltage(V)": 0,
+    "Current(mA)": -2.274,
+    "CurrentDensity(mA/cm^2)": -23.742,
+    "Power(mW)": 0
+  },
+  {
+    "NO": 97,
+    "Voltage(V)": -0.013,
+    "Current(mA)": -2.275,
+    "CurrentDensity(mA/cm^2)": -23.744,
+    "Power(mW)": 0.028
+  },
+  {
+    "NO": 98,
+    "Voltage(V)": -0.025,
+    "Current(mA)": -2.275,
+    "CurrentDensity(mA/cm^2)": -23.744,
+    "Power(mW)": 0.057
+  },
+  {
+    "NO": 99,
+    "Voltage(V)": -0.038,
+    "Current(mA)": -2.275,
+    "CurrentDensity(mA/cm^2)": -23.745,
+    "Power(mW)": 0.085
+  },
+  {
+    "NO": 100,
+    "Voltage(V)": -0.05,
+    "Current(mA)": -2.275,
+    "CurrentDensity(mA/cm^2)": -23.747,
+    "Power(mW)": 0.114
+  },
+  {
+    "NO": "$$",
+    "Voltage(V)": "",
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "############Test Information############",
+    "Voltage(V)": "",
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Date : 20250722_180516",
+    "Voltage(V)": "",
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Area(cm^2) :",
+    "Voltage(V)": 0.096,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "First value(V) :",
+    "Voltage(V)": -0.05,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Second value(V) :",
+    "Voltage(V)": 1.2,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Third value(V) :",
+    "Voltage(V)": 1,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Last value(V) :",
+    "Voltage(V)": 1.3,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "1st step count :",
+    "Voltage(V)": 100,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "2nd step count :",
+    "Voltage(V)": 33,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "3rd step count :",
+    "Voltage(V)": 34,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "InPw(mW / cm2) :",
+    "Voltage(V)": 100,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "############Test Result############",
+    "Voltage(V)": "",
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Voc(V) :",
+    "Voltage(V)": 1.105,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Isc(mA) :",
+    "Voltage(V)": 2.274,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Jsc(mA/cm^2) :",
+    "Voltage(V)": 23.742,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Pmax(mW) :",
+    "Voltage(V)": 2.024,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Vmax(V) :",
+    "Voltage(V)": 0.963,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Imax(mA) :",
+    "Voltage(V)": 2.103,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Fill Factor(%) :",
+    "Voltage(V)": 80.5599732263475,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "Efficiency(%) :",
+    "Voltage(V)": 21.1283619519833,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "R Shunt(Ohm) :",
+    "Voltage(V)": 50216.122,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  },
+  {
+    "NO": "R Series(Ohm) :",
+    "Voltage(V)": 36.088,
+    "Current(mA)": "",
+    "CurrentDensity(mA/cm^2)": "",
+    "Power(mW)": ""
+  }
+]
