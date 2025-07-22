@@ -43,6 +43,7 @@ def main(path):
     data = load_file(path)
     result = extract_values(data)
     for name in TARGET_PATTERNS.values():
+
         print(f"{name}: {result.get(name)}")
 
 if __name__ == "__main__":

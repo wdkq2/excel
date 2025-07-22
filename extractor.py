@@ -5,6 +5,7 @@ TARGET_PATTERNS = {
     r"jsc": "Jsc",
     r"fill\s*factor": "FillFactor",
     r"efficiency": "Efficiency",
+
 }
 
 def _normalize(text: str) -> str:
@@ -14,6 +15,7 @@ def _normalize(text: str) -> str:
 
 def _get_value(record: dict, field: str):
     field = _normalize(field)
+
     for k, v in record.items():
         if _normalize(k) == field:
             return v
@@ -38,4 +40,5 @@ def extract_values(data):
                     result[name] = float(val)
                 except (TypeError, ValueError):
                     pass
+
     return result

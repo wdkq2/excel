@@ -4,6 +4,7 @@ import csv
 import io
 import zipfile
 
+
 from extractor import extract_values, _normalize
 
 app = FastAPI()
@@ -51,6 +52,7 @@ async def load_data(upload_file: UploadFile):
         raise HTTPException(status_code=400, detail="File must be UTF-8 encoded")
 
     return parse_text(text)
+
 
 @app.post("/extract")
 async def extract(file: UploadFile = File(...)):
