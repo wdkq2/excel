@@ -5,7 +5,6 @@ import io
 
 from extractor import extract_values, _normalize
 
-
 app = FastAPI()
 
 async def load_data(upload_file: UploadFile):

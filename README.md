@@ -19,7 +19,10 @@ Send a POST request to `/extract` with a file (multipart/form-data) to receive t
 CSV files exported from Excel may contain a UTF-8 BOM, extra whitespace or use
 different delimiters (comma, semicolon, tab). The API automatically normalizes
 headers and detects the delimiter so both JSON and various CSV exports work out
-of the box.
+of the box. If the summary numbers (e.g. `Voc(V) : 1.105`) appear as separate
+records, the extractor searches the `NO` column using regular expressions so
+these rows are still recognized.
+
 
 ## Deploying to Render
 Create a Web Service and set the Build Command and Start Command as follows:

@@ -1,12 +1,14 @@
 import json
 import sys
-from extractor import extract_values, TARGET_KEYS
+from extractor import extract_values, TARGET_PATTERNS
+
 
 def main(path):
     with open(path) as f:
         data = json.load(f)
     result = extract_values(data)
-    for name in TARGET_KEYS.values():
+    for name in TARGET_PATTERNS.values():
+
         print(f"{name}: {result.get(name)}")
 
 if __name__ == "__main__":
