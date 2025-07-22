@@ -4,6 +4,7 @@ import csv
 import io
 import zipfile
 
+
 from extractor import extract_values, _normalize
 
 app = FastAPI()
