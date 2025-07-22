@@ -10,10 +10,12 @@ app = FastAPI()
 async def load_data(upload_file: UploadFile):
     content = await upload_file.read()
     try:
-        text = content.decode("utf-8")
+        # "utf-8-sig" strips a BOM if present
+        text = content.decode("utf-8-sig")
     except UnicodeDecodeError:
         raise HTTPException(status_code=400, detail="File must be UTF-8 encoded")
-    # try JSON
+
+    # First attempt to parse JSON
     try:
         data = json.loads(text)
         if isinstance(data, dict):
@@ -21,8 +23,14 @@ async def load_data(upload_file: UploadFile):
         return data
     except json.JSONDecodeError:
         pass
-    # fallback to CSV
-    reader = csv.DictReader(io.StringIO(text))
+
+    # Fallback to CSV with delimiter detection
+    sample = text[:1024]
+    try:
+        dialect = csv.Sniffer().sniff(sample)
+    except csv.Error:
+        dialect = csv.excel
+    reader = csv.DictReader(io.StringIO(text), dialect=dialect)
     data = []
     for row in reader:
         clean = {_normalize(k): v for k, v in row.items()}
