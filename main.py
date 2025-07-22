@@ -53,7 +53,6 @@ async def load_data(upload_file: UploadFile):
 
     return parse_text(text)
 
-
 @app.post("/extract")
 async def extract(file: UploadFile = File(...)):
     data = await load_data(file)

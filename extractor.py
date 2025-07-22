@@ -15,7 +15,6 @@ def _normalize(text: str) -> str:
 
 def _get_value(record: dict, field: str):
     field = _normalize(field)
-
     for k, v in record.items():
         if _normalize(k) == field:
             return v
