@@ -1,0 +1,122 @@
+from fastapi import FastAPI, File, UploadFile, HTTPException
+from fastapi.responses import StreamingResponse
+from typing import List
+import json
+import csv
+import io
+import os
+import zipfile
+import re
+from io import BytesIO
+from openpyxl import Workbook
+
+from extractor import extract_values, _normalize
+
+app = FastAPI()
+
+async def load_data(upload_file: UploadFile):
+    content = await upload_file.read()
+
+    def parse_text(text: str):
+        """Parse a JSON or CSV text block into records."""
+        # First attempt to parse JSON
+        try:
+            data = json.loads(text)
+            if isinstance(data, dict):
+                data = [data]
+            return data
+        except json.JSONDecodeError:
+            pass
+
+        # Fallback to CSV with delimiter detection
+        sample = text[:1024]
+        try:
+            dialect = csv.Sniffer().sniff(sample)
+        except csv.Error:
+            dialect = csv.excel
+        reader = csv.DictReader(io.StringIO(text), dialect=dialect)
+        rows = []
+        for row in reader:
+            clean = {_normalize(k): v for k, v in row.items()}
+            rows.append(clean)
+        return rows
+
+    # Handle ZIP archives containing CSVs (use the first CSV file found)
+    if zipfile.is_zipfile(io.BytesIO(content)):
+        with zipfile.ZipFile(io.BytesIO(content)) as zf:
+            csv_files = [n for n in zf.namelist() if n.lower().endswith('.csv')]
+            if not csv_files:
+                raise HTTPException(status_code=400, detail="No CSV files in archive")
+            text = zf.read(csv_files[0]).decode('utf-8-sig')
+        return parse_text(text)
+
+    # Regular text file
+    try:
+        text = content.decode('utf-8-sig')
+    except UnicodeDecodeError:
+        raise HTTPException(status_code=400, detail="File must be UTF-8 encoded")
+
+    return parse_text(text)
+
+@app.post("/extract")
+async def extract(files: List[UploadFile] = File(...)):
+    """Extract values from one or more uploaded files."""
+    results = []
+    for upload_file in files:
+        data = await load_data(upload_file)
+        values = extract_values(data)
+        results.append({"filename": upload_file.filename, **values})
+
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Results"
+
+    # Header row
+    ws.cell(row=1, column=2, value="Voc")
+    ws.cell(row=1, column=4, value="Jsc")
+    ws.cell(row=1, column=6, value="FF")
+    ws.cell(row=1, column=8, value="Efficiency")
+
+    row_map = {}
+    row = 2
+    for group in range(101, 111):
+        ws.cell(row=row, column=1, value=f"{group} f1")
+        row_map[(group, 1)] = row
+        row += 1
+        for sub in range(2, 5):
+            ws.cell(row=row, column=1, value=f"f{sub}")
+            row_map[(group, sub)] = row
+            row += 1
+        if group == 105:
+            ws.cell(row=row, column=1, value="MeO-2PACz")
+            row += 1
+        if group == 108:
+            ws.cell(row=row, column=1, value="Cl-2PACz")
+            row += 1
+
+    pattern = re.compile(r"(\d+)-(\d+)")
+    for item in results:
+        match = pattern.search(item["filename"])
+        if not match:
+            continue
+        group = int(match.group(1))
+        sub = int(match.group(2))
+        r = row_map.get((group, sub))
+        if not r:
+            continue
+        ws.cell(row=r, column=2, value=item.get("Voc"))
+        ws.cell(row=r, column=4, value=item.get("Jsc"))
+        ws.cell(row=r, column=6, value=item.get("FillFactor"))
+        ws.cell(row=r, column=8, value=item.get("Efficiency"))
+
+    output = BytesIO()
+    wb.save(output)
+    output.seek(0)
+
+    headers = {"Content-Disposition": "attachment; filename=results.xlsx"}
+    return StreamingResponse(output, media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", headers=headers)
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", "8000"))
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
