@@ -38,16 +38,18 @@ def parse_text(text: str):
         clean = {_normalize(k): v for k, v in row.items()}
         rows.append(clean)
     return rows
-
-def main(path):
+def process_path(path):
     data = load_file(path)
     result = extract_values(data)
+    print(path)
     for name in TARGET_PATTERNS.values():
-
-        print(f"{name}: {result.get(name)}")
+        print(f"  {name}: {result.get(name)}")
+    print()
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python extract_values.py <data.json>")
+    if len(sys.argv) < 2:
+        print("Usage: python extract_values.py <file1> [file2 ...]")
         sys.exit(1)
-    main(sys.argv[1])
+    for p in sys.argv[1:]:
+        process_path(p)
+
