@@ -44,3 +44,10 @@ Start command is provided in the `Procfile` and should appear automatically as:
 ```
 uvicorn main:app --host 0.0.0.0 --port $PORT
 ```
+
+### Troubleshooting on Render
+On the free plan, services are automatically suspended after a period of
+inactivity. Sending a request to the service URL (e.g. `/docs`) will wake it up
+again, though it may take a few seconds to start. Make sure the Start Command in
+Render is exactly `uvicorn main:app --host 0.0.0.0 --port $PORT`; otherwise the
+server may exit immediately.
