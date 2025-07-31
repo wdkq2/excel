@@ -53,3 +53,4 @@ if __name__ == "__main__":
         sys.exit(1)
     for p in sys.argv[1:]:
         process_path(p)
+

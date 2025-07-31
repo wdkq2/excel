@@ -16,6 +16,7 @@ uvicorn main:app --reload
 
 Send a POST request to `/extract` with one or more files (multipart/form-data) to receive a list of results. Each item contains the uploaded filename along with the extracted numbers.
 
+
 For quick testing you can also run the helper script:
 
 ```bash
@@ -28,6 +29,7 @@ To test the API manually:
 curl -X POST http://localhost:8000/extract \
   -F files=@sample1.csv \
   -F files=@sample2.csv
+
 ```
 
 CSV files exported from Excel may contain a UTF-8 BOM, extra whitespace or use

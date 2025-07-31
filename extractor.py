@@ -5,6 +5,7 @@ TARGET_PATTERNS = {
     r"jsc": "Jsc",
     r"fill\s*factor": "FillFactor",
     r"efficiency": "Efficiency",
+
 }
 
 def _normalize(text: str) -> str:
@@ -38,4 +39,5 @@ def extract_values(data):
                     result[name] = float(val)
                 except (TypeError, ValueError):
                     pass
+
     return result
