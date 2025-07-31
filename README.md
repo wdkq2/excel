@@ -14,13 +14,21 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-Send a POST request to `/extract` with one or more files (multipart/form-data) to receive the parsed values. The response maps each filename to its extracted numbers.
+Send a POST request to `/extract` with one or more files (multipart/form-data) to receive a list of results. Each item contains the uploaded filename along with the extracted numbers.
 
 
 For quick testing you can also run the helper script:
 
 ```bash
 python extract_values.py <file1> [file2 ...]
+```
+
+To test the API manually:
+
+```bash
+curl -X POST http://localhost:8000/extract \
+  -F files=@sample1.csv \
+  -F files=@sample2.csv
 
 ```
 

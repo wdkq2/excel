@@ -38,6 +38,7 @@ def parse_text(text: str):
         clean = {_normalize(k): v for k, v in row.items()}
         rows.append(clean)
     return rows
+
 def process_path(path):
     data = load_file(path)
     result = extract_values(data)

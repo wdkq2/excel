@@ -1,6 +1,5 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from typing import List
-
 import json
 import csv
 import io
@@ -58,10 +57,11 @@ async def load_data(upload_file: UploadFile):
 @app.post("/extract")
 async def extract(files: List[UploadFile] = File(...)):
     """Extract values from one or more uploaded files."""
-    results = {}
+    results = []
     for upload_file in files:
         data = await load_data(upload_file)
-        results[upload_file.filename] = extract_values(data)
+        values = extract_values(data)
+        results.append({"filename": upload_file.filename, **values})
     return results
 
 
