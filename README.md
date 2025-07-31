@@ -16,10 +16,12 @@ uvicorn main:app --reload
 
 Send a POST request to `/extract` with one or more files (multipart/form-data) to receive the parsed values. The response maps each filename to its extracted numbers.
 
+
 For quick testing you can also run the helper script:
 
 ```bash
 python extract_values.py <file1> [file2 ...]
+
 ```
 
 CSV files exported from Excel may contain a UTF-8 BOM, extra whitespace or use

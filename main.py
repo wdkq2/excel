@@ -1,5 +1,6 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from typing import List
+
 import json
 import csv
 import io
@@ -63,7 +64,9 @@ async def extract(files: List[UploadFile] = File(...)):
         results[upload_file.filename] = extract_values(data)
     return results
 
+
 if __name__ == "__main__":
     import uvicorn
     port = int(os.getenv("PORT", "8000"))
     uvicorn.run("main:app", host="0.0.0.0", port=port)
+
